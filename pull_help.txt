@@ -1,0 +1,23 @@
+HELP:
+
+This script is designed to pull a production site down to a staging site or local
+development server in an automated fashion. Following are command-line switches 
+that can be used to modify the behavior of this script:
+
+--download-db           Download a backup copy of the database. This flag will
+                        trigger the production server to generate a new backup
+                        on the fly.
+
+--install-db            Download a backup copy of the database (see --download-db),
+                        and then install it locally.
+
+--install-db-only       Install the database locally without downloading it or any
+                        of the files on the site.
+
+--backup-local-db       Creates a backup copy of the local database prior to making
+                        any changes
+
+NOTE:
+Unless you choose --install-db-only, the script will download the latest files
+from the remote website. This includes modules, themes, uploaded files,
+drupal core, etc.
