@@ -44,3 +44,9 @@ OR
 
 `sitepull.sh ~/conf/CONFIG_FILE.conf --install-db --backup-local-db`  
 (That will also download and install a dump of the remote database, but will back up the local database first)
+
+*SHORTCUT*
+
+`pull CONFIG_FILE`
+is a shortcut for
+`sitepull.sh ~/conf/CONFIG_FILE.conf --install-db --backup-local-db`
