@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$HOME/bin/sitepull.sh $HOME/conf/$1.conf --install-db --backup-local-db
